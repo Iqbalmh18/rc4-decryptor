@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 import os
-import sys
-from datetime import datetime
 
 # default hardcoded key
 key = b'21983453453435435738912738921'
