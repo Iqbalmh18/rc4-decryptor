@@ -20,7 +20,7 @@ def rc4_decrypt(key, ciphertext):
     return bytes(out)
 
 def __rc4__():
-    print(r'''
+    print(f'''
    ___  _________   ___                        __
   / _ \/ ___/ / /  / _ \___ __________ _____  / /____  ____
  / , _/ /__/_  _/ / // / -_) __/ __/ // / _ \/ __/ _ \/ __/
@@ -31,7 +31,7 @@ Python program to decrypt encrypted files with extension ".coderCrypt"
 from  Ransomware "CyberPunk 2077" using Key Scheduling Algorithm (KSA)
 and Pseudo-Random Generation Algorithm (PRGA).
 
-[-] using default hardcoded key "21983453453435435738912738921"
+[-] using default hardcoded key "{key.decode()}"
 [-] example path for android "/sdcard"''')
     path_encrypted = str(input('[?] input path: '))
     if not os.path.isdir(path_encrypted): exit('[!] path not found ...')
